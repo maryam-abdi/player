@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>play</title>
+  </head>
+  <body>
+    <div
+      class="w-full h-screen flex flex-col justify-start items-center bg-purple-100"
+    >
+      <button
+        onclick="start()"
+        class="py-4 px-32 bg-purple-700 text-white text-2xl cursor-pointer rounded-lg m-20"
+      >
+        سنگ کاغذ قیچی
+      </button>
+
+      <div class="w-2/3 flex justify-center items-center">
+        <div class="w-[30%] flex flex-col justify-center items-center div-main">
+          <h2
+            class="h2_style font-medium show-cpu text-2xl py-6 w-[150px] h-[60px] flex justify-center items-center rounded-full my-4 border bg-red-500"
+          >
+            کاغذ
+          </h2>
+          <div class="sumWin cpuWin">:برد کامپیوتر</div>
+        </div>
+
+        <div class="w-[30%] flex flex-col justify-center items-center div-main">
+          <h2
+            class="h2_style show-user text-2xl py-6 font-medium show-cpu w-[150px] h-[60px] flex justify-center items-center rounded-full my-4 border bg-red-500"
+          >
+            کاغذ
+          </h2>
+          <div class="sumWin userWin">:برد کاربر</div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center items-center mt-20 gap-8">
+        <div onclick="start(0)" class="button hover:scale-105 transition-all">
+          <img src="../imgs/hand-rock-2.svg" alt="" />
+        </div>
+        <div onclick="start(1)" class="button hover:scale-105 transition-all">
+          <img src="../imgs/hand-peace-2.svg" alt="" />
+        </div>
+        <div onclick="start(2)" class="button hover:scale-105 transition-all">
+          <img src="../imgs/hand-paper-3.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="backdrop hideen w-full h-screen">
+      <div
+        class="show-modal hideen w-[500px] h-[200px] bg-white text-bold text-3xl rounded-lg"
+      >
+        show msg
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

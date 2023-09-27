@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    .h2_style{
+        @apply text-2xl  text-white p-2 ;
+    }
+    .sumWin{
+        @apply w-[150px] h-[50px] flex justify-center items-center rounded-lg bg-purple-600 text-white text-xl  font-medium;
+    }
+    .button{
+        @apply   flex justify-center items-center text-xl font-medium text-gray-300 cursor-pointer hover:scale-105 transition-all;
+    }
+    
+}
